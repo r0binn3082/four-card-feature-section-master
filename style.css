@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body{
+    font-size: 0.94rem;
+    background-color: var(--Very-Light-Gray);
+    font-family: 'poppins', sans-serif;
+}
+main{
+    width: 85%;
+    margin: auto;
+}
+p{
+    font-weight: 200;
+    color: var(--Grayish-Blue);
+}
+h1{
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+.intro{
+    text-align: center;
+    margin: auto;
+    width:  50ch;
+    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
+}
+.intro *{
+    margin: 3px;
+}
+.light-font{
+    font-weight: 200;
+    color: var(--Grayish-Blue);
+    font-size: 1.4rem;
+}
+.grid-parent{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    max-height: 100vh;
+}
+.grid-parent > div{
+    display: inline;
+    border-radius: 18px;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0 5px 5px var(--Grayish-Blue) ;
+    width: -webkit-fill-available;
+}
+.card1{
+    border-block-start: 4px  var(--Cyan) solid ;
+    grid-column: 1 / 2 ;
+    grid-row: span 2 / span 3 ;
+}
+.card2{
+    border-block-start: 4px  var(--Red) solid  ;
+    grid-column: 2 / 3 ;
+}
+.card3{
+    border-block-start: 4px  var(--Orange) solid  ;
+    grid-column: 2 / 3 ;
+}
+.card4{
+    border-block-start: 4px  var(--Red) solid  ;
+    grid-column: 3/4 ;
+    grid-row: 1 / span 2 ;
+}
+img{
+    position: relative;
+    left: 80%;
+}
+.card-content{
+    padding:  0.5rem;
+}
+
+@media (max-width:400px) {
+    .grid-parent{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .grid-parent > div{
+        width: 31ch;
+        margin: auto;
+    }
+    .intro{
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem 2rem 1rem;
+        width: 31ch;
+        margin: auto;
+    }
+    .intro *{
+        margin: 0;
+    }
+    .card1{
+        border-block-start: 4px  var(--Cyan) solid ;
+    }
+    .card2{
+        border-block-start: 4px  var(--Red) solid  ;
+    }
+    .card3{
+        border-block-start: 4px  var(--Orange) solid  ;
+    }
+    .card4{
+        border-block-start: 4px  var(--Red) solid  ;
+    }
+}
