@@ -15,7 +15,7 @@ body{
 }
 main{
     width: 85%;
-    margin: 4px auto;
+    margin: 8px auto;
 }
 p{
     font-weight: 200;
@@ -49,7 +49,7 @@ h1{
 }
 .grid-parent > div{
     display: inline;
-    border-radius: 18px;
+    border-radius: 8px;
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 0 5px 5px var(--Grayish-Blue) ;
     width: 350px;
