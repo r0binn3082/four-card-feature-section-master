@@ -15,7 +15,7 @@ body{
 }
 main{
     width: 85%;
-    margin: auto;
+    margin: 4px auto;
 }
 p{
     font-weight: 200;
@@ -52,7 +52,8 @@ h1{
     border-radius: 18px;
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 0 5px 5px var(--Grayish-Blue) ;
-    width: -webkit-fill-available;
+    width: 350px;
+    height: 250px;
 }
 .card1{
     border-block-start: 4px  var(--Cyan) solid ;
